@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    color: #2b2b2b;
+    background-color: #f7f5fb;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+:root {
+    --primary-color: #4b0082;
+
+    --primary-light: #6a1eb0;
+
+    --text-light: #ffffff;
+    --caption-color: #5c2d91;
+    --background-color: #f7f5fb;}
+
+ header {
+     background-color: var(--primary-color);
+     color: var(--text-light);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1rem 1.25rem;
+     position: relative;
+        }
+header p {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0;
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+.navigation.show {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.navigation a:hover {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+}
+
+figure {
+    margin: 0;
+    background-color: white;
+    border: 1px solid #e0d9ec;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+figcaption {
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--caption-color);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
