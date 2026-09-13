@@ -8,10 +8,12 @@ body {
     color: #2b2b2b;
     background-color: #f7f5fb;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
+
 :root {
     --primary-color: #4b0082;
 
@@ -19,23 +21,26 @@ img {
 
     --text-light: #ffffff;
     --caption-color: #5c2d91;
-    --background-color: #f7f5fb;}
+    --background-color: #f7f5fb;
+}
 
- header {
-     background-color: var(--primary-color);
-     color: var(--text-light);
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 1rem 1.25rem;
-     position: relative;
-        }
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    position: relative;
+}
+
 header p {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 1.4rem;
     margin: 0;
 }
+
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -51,6 +56,7 @@ header p {
 #menu.open::before {
     content: "✖";
 }
+
 .navigation {
     display: none;
     flex-direction: column;
@@ -64,6 +70,7 @@ header p {
     padding: 0;
     z-index: 10;
 }
+
 .navigation.show {
     display: flex;
 }
@@ -77,14 +84,19 @@ header p {
     font-weight: 600;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .navigation a:hover {
     background-color: var(--text-light);
     color: var(--primary-color);
 }
+
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 main h1 {
@@ -92,14 +104,6 @@ main h1 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
-}
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-main h1 {
     grid-column: 1 / -1;
 }
 
@@ -118,6 +122,7 @@ figcaption {
     font-weight: 600;
     color: var(--caption-color);
 }
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
