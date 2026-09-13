@@ -1,35 +1,38 @@
+
 @media (min-width: 45em) {
 
     header {
         padding: 1rem 2rem;
     }
 
+
     #menu {
         display: none;
     }
 
+    
+    nav.navigation {
+        flex-direction: row;
+        position: static;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+        background-color: transparent;
+    }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background-color: transparent;
+    nav.navigation a {
+        padding: 0.5rem 1rem;
+    }
+
+    
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    main h1 {
+        margin-bottom: 2rem;
+    }
 }
-
-.navigation a {
-    padding: 0.5rem 1rem;
-}
-
-  main {
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 1000px;
-      gap: 2rem;
-      padding: 2rem 1rem;
-  }
-
-  main h1 {
-      margin-bottom: 2rem;
-  }
-}
-

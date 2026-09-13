@@ -57,8 +57,8 @@ header p {
     content: "✖";
 }
 
-.navigation {
-    display: none;
+nav.navigation {
+    display: flex;
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);
@@ -69,13 +69,16 @@ header p {
     margin: 0;
     padding: 0;
     z-index: 10;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
-.navigation.show {
-    display: flex;
+nav.navigation.show {
+    max-height: 300px;
 }
 
-.navigation a {
+nav.navigation a {
     display: block;
     padding: 1rem;
     text-align: center;
@@ -85,7 +88,7 @@ header p {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.navigation a:hover {
+nav.navigation a:hover {
     background-color: var(--text-light);
     color: var(--primary-color);
 }
