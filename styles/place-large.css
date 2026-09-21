@@ -1,0 +1,34 @@
+@media (min-width: 50em) {
+
+    header {
+        padding: 1.25rem 2rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+        .hero {
+            position: relative;
+        }
+    
+        .hero img {
+            height: 500px;
+            object-fit: cover;
+        }
+    
+        .card {
+            position: absolute;
+            max-width: 300px;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 0.2);
+        }
+    
+        .data-card {
+            top: 2rem;
+            left: 2rem;
+        }
+    
+        .weather-card {
+            bottom: 2rem;
+            right: 2rem;
+        }
+        }
