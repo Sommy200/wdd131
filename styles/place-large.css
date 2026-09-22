@@ -31,4 +31,22 @@
             bottom: 2rem;
             right: 2rem;
         }
+
+        .weather-card h2::after {  
+             content: "";
+             display: inline-block;
+             width: 32px;
+             height: 32px;
+             margin-left: 0.5rem;
+             vertical-align: middle;
+             background-image: url('images/cloud.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+         }
+        
+                /* Hide the mobile weather icon element so it doesn't appear twice */
+         .weather-card .weather-icon {
+              display: none;
         }
+        }
+
