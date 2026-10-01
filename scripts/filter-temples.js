@@ -92,19 +92,19 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-54641-main.jpg"
     },
 
-    // Add more temple objects here...
+
 ];
 
 const main = document.querySelector("main");
 
-// Extract the dedication year from a string like "2005, August, 7"
+
 function getDedicatedYear(dedicated) {
     return parseInt(dedicated.split(",")[0], 10);
 }
 
-// Build and insert a temple card for each temple in the given array
+
 function displayTemples(templeArray) {
-    // Remove any previously rendered cards (but keep the <h1>)
+
     document.querySelectorAll("main figure").forEach(figure => figure.remove());
 
     templeArray.forEach(temple => {
@@ -124,7 +124,7 @@ function displayTemples(templeArray) {
     });
 }
 
-// Filter logic for each nav option
+
 function filterTemples(filter) {
     let filtered;
 
@@ -150,17 +150,17 @@ function filterTemples(filter) {
     displayTemples(filtered);
 }
 
-// Wire up each nav link to its corresponding filter
+
 document.querySelectorAll(".navigation a").forEach(link => {
     link.addEventListener("click", (event) => {
         event.preventDefault();
         filterTemples(link.dataset.filter);
 
-        // Close the mobile menu after a selection
+
         navigation.classList.remove("show");
         hamButton.classList.remove("open");
     });
 });
 
-// Show all temples on initial page load
+
 displayTemples(temples);
