@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Portrait Image Gallery</h1>
+
+        <!-- 6 child <img> elements with loading="lazy" and portrait dimensions -->
+        <img src="https://picsum.photos/400/600?random=1" alt="Scenic landscape photography 1" width="400" height="600"
+            loading="lazy">
+
+        <img src="https://picsum.photos/400/600?random=2" alt="Scenic landscape photography 2" width="400" height="600"
+            loading="lazy">
+
+        <img src="https://picsum.photos/400/600?random=3" alt="Scenic landscape photography 3" width="400" height="600"
+            loading="lazy">
+
+        <img src="https://picsum.photos/400/600?random=4" alt="Scenic landscape photography 4" width="400" height="600"
+            loading="lazy">
+
+        <img src="https://picsum.photos/400/600?random=5" alt="Scenic landscape photography 5" width="400" height="600"
+            loading="lazy">
+
+        <img src="https://picsum.photos/400/600?random=6" alt="Scenic landscape photography 6" width="400" height="600"
+            loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lazy Load Gallery Showcase. All rights reserved.</p>
+        <p>Document last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
