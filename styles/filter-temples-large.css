@@ -1,4 +1,3 @@
-
 @media (min-width: 45em) {
 
     header {
@@ -10,7 +9,7 @@
         display: none;
     }
 
-    
+
     nav.navigation {
         flex-direction: row;
         position: static;
@@ -24,7 +23,7 @@
         padding: 0.5rem 1rem;
     }
 
-    
+
     main {
         grid-template-columns: repeat(3, 1fr);
         max-width: 1000px;
