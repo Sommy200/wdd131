@@ -207,6 +207,30 @@ figcaption {
     height: 70px;
 }
 
+.swatch.deep-blue {
+    background: var(--deep);
+}
+
+.swatch.lane-blue {
+    background: var(--lane);
+}
+
+.swatch.foam-bg {
+    background: var(--foam);
+}
+
+.swatch.buoy-orange {
+    background: var(--buoy);
+}
+
+.swatch.ink-text {
+    background: var(--ink);
+}
+
+.swatch.white-bg {
+    background: var(--white);
+}
+
 @media (max-width: 40rem) {
     nav a {
         display: inline-block;
