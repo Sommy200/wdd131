@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="description" content="Confirmation page for a submitted product review.">
+    <meta name="author" content="Somto Unachukwu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+        <p class="tagline">Your review has been received.</p>
+    </header>
+
+    <main>
+        <section class="summary-card">
+            <h2>Review Summary</h2>
+            <dl id="summary-list">
+
+            </dl>
+        </section>
+
+        <p class="counter-note">You are reviewer number <strong id="review-count"></strong> to submit feedback. Thank
+            you for contributing!</p>
+
+        <a class="back-link" href="review-form.html">&larr; Submit another review</a>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Somto Unachukwu | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
