@@ -5,13 +5,13 @@
     /* for my links and  borders */
     --foam: #EAF6FA;
     /* for my background page */
-    --buoy: #F26B3A;
+    --buoy: #9A3412;
     /* for my buttons and highlights */
     --ink: #1D2B36;
     /* for the body text */
     --white: #ffffff;
    
-    --link: #0A7A9C;
+    --link: #0A5C7A;
 }
 
 * {
@@ -102,7 +102,7 @@ a {
 .btn {
     display: inline-block;
     background: var(--buoy);
-    color: var(--ink);
+    color: var(--white);
     padding: .4rem 1rem;
     border-radius: 4px;
     font-weight: 600;
