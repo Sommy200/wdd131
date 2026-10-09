@@ -28,7 +28,6 @@ legend {
     margin: 0;
 }
 
-/* ============ Header ============ */
 header {
     background-color: var(--primary);
     color: white;
@@ -124,7 +123,7 @@ legend {
 ::placeholder {
     color: #5c6b68;
     opacity: 1;
-    /* Ensures browsers don't lower the opacity */
+    
 }
 
 .rating-field .stars {
