@@ -279,3 +279,13 @@ footer {
 footer p {
     margin: 0.25rem 0;
 }
+
+@media (max-width: 640px) {
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
