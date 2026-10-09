@@ -11,7 +11,7 @@
     --ink: #1f2b29;
     --muted: #485552;
     --card-bg: #ffffff;
-    --border: #d9e2e0;
+    --border: #8fa19e;
 }
 
 body {
@@ -121,6 +121,11 @@ legend {
     padding: 0 0.3rem;
 }
 
+::placeholder {
+    color: #5c6b68;
+    opacity: 1;
+    /* Ensures browsers don't lower the opacity */
+}
 
 .rating-field .stars {
     display: flex;
