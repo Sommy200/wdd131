@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Somto Unachukwu">
+    <meta name="description"
+        content="DE-IYKE Swimming Club offers swim lessons, youth training, adult fitness and water safety classes in Nigeria.">
+    <title>DE-IYKE Swimming Club | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <svg class="logo" viewBox="0 0 72 72" aria-hidden="true">
+                <circle cx="36" cy="36" r="34" fill="#1FA2C9" stroke="#fff" stroke-width="3" />
+                <path d="M10 30 q8-8 16 0 t16 0 t16 0 M10 42 q8-8 16 0 t16 0 t16 0 M10 54 q8-8 16 0 t16 0 t16 0"
+                    fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                <circle cx="48" cy="18" r="6" fill="#F26B3A" />
+            </svg>
+            <span>DE-IYKE Swimming Club</span>
+        </a>
+        <button id="menu" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="site-nav">&#9776;</button>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="program.html">Programs</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://picsum.photos/id/1011/1200/600"
+                srcset="https://picsum.photos/id/1011/600/450 600w, https://picsum.photos/id/1011/1200/600 1200w"
+                sizes="100vw" width="1200" height="600" alt="Calm blue water at the club pool">
+            <div class="hero-text">
+                <h1>Learn, train and thrive in the water</h1>
+                <p>A friendly Nigerian swimming club for beginners, young competitors, adults and families.</p>
+                <a class="btn" href="join.html">Join now</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Our mission</h2>
+            <p>We help every swimmer build confidence, fitness and water safety skills in a welcoming community. Whether
+                you are taking your first strokes or training for a meet, there is a lane for you.</p>
+            <p class="note" id="visit-note">You have visited <strong id="visits"></strong>.</p>
+        </section>
+
+        <section>
+            <h2>What we offer</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Beginner lessons</h3>
+                    <p>Gentle, small-group lessons for children and adults who are new to swimming.</p>
+                </article>
+                <article class="card">
+                    <h3>Youth training</h3>
+                    <p>Technique and race coaching for young swimmers who want to compete.</p>
+                </article>
+                <article class="card">
+                    <h3>Adult fitness</h3>
+                    <p>Lap swimming sessions that build strength and stamina.</p>
+                </article>
+                <article class="card">
+                    <h3>Water safety</h3>
+                    <p>Life-saving skills for every age, taught by certified coaches.</p>
+                </article>
+            </div>
+            <p><a class="btn" href="program.html">See all programs</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Somto Unachukwu | DE-IYKE Swimming Club | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

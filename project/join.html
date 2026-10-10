@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Somto Unachukwu">
+    <meta name="description" content="Practice times, membership prices and a sign-up form for DE-IYKE Swimming Club.">
+    <title>Join | DE-IYKE Swimming Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <svg class="logo" viewBox="0 0 72 72" aria-hidden="true">
+                <circle cx="36" cy="36" r="34" fill="#1FA2C9" stroke="#fff" stroke-width="3" />
+                <path d="M10 30 q8-8 16 0 t16 0 t16 0 M10 42 q8-8 16 0 t16 0 t16 0 M10 54 q8-8 16 0 t16 0 t16 0"
+                    fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                <circle cx="48" cy="18" r="6" fill="#F26B3A" />
+            </svg>
+            <span>DE-IYKE Swimming Club</span>
+        </a>
+        <button id="menu" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="site-nav">&#9776;</button>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="program.html">Programs</a>
+            <a href="join.html" aria-current="page">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Schedule and membership</h1>
+
+        <h2>Practice times</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Days</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginners</td>
+                        <td>Mon, Wed</td>
+                        <td>4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Youth squad</td>
+                        <td>Tue, Thu, Sat</td>
+                        <td>5:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Adult fitness</td>
+                        <td>Mon to Fri</td>
+                        <td>6:30 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Membership prices</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Per month</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner</td>
+                        <td>&#8358;15,000</td>
+                    </tr>
+                    <tr>
+                        <td>Youth squad</td>
+                        <td>&#8358;25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>&#8358;20,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Request a free trial session</h2>
+        <form action="thanks.html" method="get">
+            <div class="field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+                <label for="program">Program</label>
+                <select id="program" name="program" required>
+                    <option value="" disabled selected>Select a program ...</option>
+                    <option value="beginner">Beginner lessons</option>
+                    <option value="youth">Youth training</option>
+                    <option value="adult">Adult fitness</option>
+                    <option value="safety">Water safety</option>
+                </select>
+            </div>
+            <fieldset class="field">
+                <legend>Swimming experience</legend>
+                <label class="inline"><input type="radio" name="level" value="none" required> None</label>
+                <label class="inline"><input type="radio" name="level" value="some"> Some</label>
+                <label class="inline"><input type="radio" name="level" value="strong"> Strong</label>
+            </fieldset>
+            <div class="field">
+                <label for="message">Message <span class="hint">(optional)</span></label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <input class="btn" type="submit" value="Request trial">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Somto Unachukwu | DE-IYKE Swimming Club | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
