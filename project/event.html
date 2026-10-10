@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Somto Unachukwu">
+    <meta name="description" content="Photos from meets and events of DE-IYKE Swimming Club.">
+    <title>Gallery | DE-IYKE Swimming Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <svg class="logo" viewBox="0 0 72 72" aria-hidden="true">
+                <circle cx="36" cy="36" r="34" fill="#1FA2C9" stroke="#fff" stroke-width="3" />
+                <path d="M10 30 q8-8 16 0 t16 0 t16 0 M10 42 q8-8 16 0 t16 0 t16 0 M10 54 q8-8 16 0 t16 0 t16 0"
+                    fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                <circle cx="48" cy="18" r="6" fill="#F26B3A" />
+            </svg>
+            <span>DE-IYKE Swimming Club</span>
+        </a>
+        <button id="menu" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="site-nav">&#9776;</button>
+        <nav id="site-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="program.html">Programs</a>
+            <a href="join.html">Join</a>
+            <a href="event.html" aria-current="page">Gallery</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Event photos</h1>
+        <p>Moments from our meets, lessons and community days.</p>
+        <section class="grid gallery" aria-label="Photo gallery">
+            <figure>
+                <img src="images/beginners.png" alt="Beginners in the pool" loading="lazy" width="400" height="250">
+                <figcaption>Beginners</figcaption>
+            </figure>
+            <figure>
+                <img src="images/competitions.jpg" alt="Competitions in progress" loading="lazy" width="400"
+                    height="250">
+                <figcaption>Competitions</figcaption>
+            </figure>
+            <figure>
+                <img src="images/instructors-swimmers.webp" alt="Instructors and swimmers at the club" loading="lazy"
+                    width="400" height="250">
+                <figcaption>Instructors and Swimmers</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kids.jpg" alt="Children swimming at the club" loading="lazy" width="400" height="250">
+                <figcaption>Kids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/splash.webp" alt="Club members splashing in the pool" loading="lazy" width="400"
+                    height="250">
+                <figcaption>Splash</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tourists.jpg" alt="Visitors at the club" loading="lazy" width="400" height="250">
+                <figcaption>Visitors</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Somto Unachukwu | DE-IYKE Swimming Club | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
